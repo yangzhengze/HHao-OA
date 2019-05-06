@@ -4,7 +4,7 @@ package com.yj.oa.common.exception.file;
 import org.apache.commons.fileupload.FileUploadBase;
 
 /**
- * @author 永健
+ * @author 剑豪
  * 文件大小异常
  */
 public class FileSizeException extends FileUploadBase.FileSizeLimitExceededException{

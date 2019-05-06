@@ -6,7 +6,7 @@ import com.yj.oa.project.po.WorkTime;
 import java.util.List;
 
 /**
- * @author 永健
+ * @author 剑豪
  */
 public interface IWorkTimeService{
     int deleteByPrimaryKeys(Integer[] id) throws Exception;

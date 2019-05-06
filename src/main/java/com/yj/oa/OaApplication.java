@@ -15,7 +15,7 @@ import java.io.InputStream;
 import java.util.zip.ZipInputStream;
 
 /**
- * @author 永健
+ * @author 剑豪
  * @描述 启动类
  *
  * @date 2018/9/23 10:53
@@ -80,7 +80,7 @@ public class OaApplication {
         InputStream inputStream = new OaApplication().getClass().getClassLoader().getResourceAsStream("processes/apply.zip");
         ZipInputStream zipInputStream = new ZipInputStream(inputStream);
         Deployment deployment = defaultProcessEngine.getRepositoryService()
-                //部署对象
+                //部署对象 
                 .createDeployment()
                 //部署名称
                 .name("会议室申请流程")

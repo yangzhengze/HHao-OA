@@ -3,7 +3,7 @@ package com.yj.oa.common.utils.file;
 import java.text.DecimalFormat;
 
 /**
- * @author 永健
+ * @author 剑豪
  *  文件工具类
  */
 public class FileUtil{

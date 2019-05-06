@@ -3,7 +3,7 @@ package com.yj.oa.project.po.dto;
 import java.util.List;
 
 /**
- * @author 永健
+ * @author 剑豪
  */
 public class MenuTree{
     private Integer id;

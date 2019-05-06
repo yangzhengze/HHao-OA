@@ -35,7 +35,7 @@ import java.util.concurrent.ThreadPoolExecutor;
 /**
  * 系统日志切点类
  *
- * @author 永健
+ * @author 剑豪
  */
 @Aspect
 @Component

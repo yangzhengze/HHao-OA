@@ -7,7 +7,7 @@ import org.springframework.context.annotation.Configuration;
 import javax.servlet.MultipartConfigElement;
 
 /**
- * @author 永健
+ * @author 剑豪
  * 配置文件上传大小
  */
 @Configuration

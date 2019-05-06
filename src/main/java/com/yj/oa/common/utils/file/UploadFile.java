@@ -14,14 +14,15 @@ import java.io.InputStream;
 import java.util.*;
 
 /**
- * @author 永健
+ * @author 剑豪
  * 上传工具类封装
  */
 public class UploadFile{
 
     private static Logger Log = LoggerFactory.getLogger(UploadFile.class);
 
-    public static final String basepath = "http://106.14.226.138:7777/";
+    //public static final String basepath = "http://106.14.226.138:7777/";
+    public static final String basepath = "http://localhost:8080/image/";
     /**
      * 默认大小 10M //字节
      */

@@ -18,7 +18,7 @@ import java.util.Date;
 import java.util.List;
 
 /**
- * @author 永健
+ * @author 剑豪
  */
 @Controller
 @RequestMapping("/notice")
@@ -126,7 +126,8 @@ public class NoticeController extends BaseController{
     {
         notice.setCreateTime(new Date());
 //        登录人
-        notice.setCreateBy(String.valueOf(getUserId()));
+        //20190504
+        notice.setCreateBy(String.valueOf(getName()));
         int insert = 0;
         try
         {

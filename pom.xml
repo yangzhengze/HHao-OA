@@ -22,11 +22,21 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <java.version>1.8</java.version>
+        <cdh.version>cdh5.5.2</cdh.version>
+        <!--add  maven release-->
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+        <encoding>UTF-8</encoding>
+        <scala.tools.version>2.10</scala.tools.version>
+        <scala.version>2.10.4</scala.version>
+        <!--add  maven release-->
         <thymeleaf.version>3.0.9.RELEASE</thymeleaf.version>
         <thymeleaf-layout-dialect.version>2.3.0</thymeleaf-layout-dialect.version>
     </properties>
 
     <dependencies>
+
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-thymeleaf</artifactId>
@@ -67,7 +77,6 @@
             <artifactId>quartz</artifactId>
             <version>1.8.4</version>
         </dependency>
-
 
         <dependency>
             <groupId>org.apache.commons</groupId>
@@ -115,6 +124,7 @@
         </dependency>
 
 
+
         <!--阿里连接池-->
         <dependency>
             <groupId>com.alibaba</groupId>
@@ -151,6 +161,15 @@
             <artifactId>thymeleaf-extras-shiro</artifactId>
             <version>2.0.0</version>
         </dependency>
+
+        <!--20190407-->
+        <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-compiler-plugin -->
+        <dependency>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-compiler-plugin</artifactId>
+            <version>3.1</version>
+        </dependency>
+
 
         <!-- pagehelper 分页插件 -->
         <dependency>

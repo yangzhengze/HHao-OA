@@ -9,7 +9,7 @@ import java.io.PrintWriter;
 import java.util.Map;
 
 /**
- * @author 永健
+ * @author 剑豪
  * ajax请求判断以及输出结果工具类
  */
 public class AjaxUtis{

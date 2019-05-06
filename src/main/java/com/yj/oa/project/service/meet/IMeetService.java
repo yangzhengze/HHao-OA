@@ -5,7 +5,7 @@ import com.yj.oa.project.po.Meet;
 import java.util.List;
 
 /**
- * @author 永健
+ * @author 剑豪
  */
 public interface IMeetService{
 

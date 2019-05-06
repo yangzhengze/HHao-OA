@@ -8,7 +8,7 @@ import java.text.NumberFormat;
 import java.util.Set;
 
 /**
- *  @author 永健
+ *  @author 剑豪
  * 类型转换器
  */
 public class Convert

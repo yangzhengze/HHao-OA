@@ -13,7 +13,7 @@ import java.util.regex.Pattern;
 import static org.apache.commons.lang3.StringUtils.isBlank;
 
 /**
- * @author 永健
+ * @author 剑豪
  * 字符串工具
  */
 public class StringUtils extends org.apache.commons.lang3.StringUtils

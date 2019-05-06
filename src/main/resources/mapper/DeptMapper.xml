@@ -112,11 +112,11 @@
             <if test="deptName != null">
                 deptName,
             </if>
-            <if test="introduce != null">
-                introduce,
-            </if>
             <if test="status != null">
                 status,
+            </if>
+            <if test="introduce != null">
+                introduce,
             </if>
             <if test="createTime != null">
                 createTime,

@@ -10,7 +10,7 @@ import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
 /**
- * @author 永健
+ * @author 剑豪
  * 客户端工具类
  *
  */

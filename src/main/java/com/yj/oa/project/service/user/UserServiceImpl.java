@@ -13,7 +13,7 @@ import org.springframework.transaction.annotation.Transactional;
 import java.util.List;
 
 /**
- * @author 永健
+ * @author 剑豪
  */
 @Service
 @Transactional
@@ -60,11 +60,14 @@ public class UserServiceImpl implements IUserService{
             uid=String.valueOf((l+1));
         }
         record.setUid(uid);
+        //使用md5加密算法对用户的密码进行加密
+        System.out.println("对应的登陆数据:--------->"+record);
+        String md5Pwd = Encryption.getMD5(record.getPwd(), uid).toString();
+        record.setPwd(md5Pwd);
         return userMapper.insertSelective(record);
     }
-
     /**
-     * @author 永健
+     * @author 剑豪
      * @描述 登录操作，通过主键Id查询用户消息
      * @date 2018/9/15 10:07
      */

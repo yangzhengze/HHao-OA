@@ -5,7 +5,7 @@ import com.yj.oa.project.po.AttendCount;
 import java.util.List;
 
 /**
- * @author 永健
+ * @author 剑豪
  */
 public interface IAttendCountService{
     int deleteByPrimaryKeys(Integer[] id);

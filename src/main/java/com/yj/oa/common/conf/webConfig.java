@@ -9,7 +9,7 @@ import org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandl
 import javax.annotation.PostConstruct;
 
 /**
- * @author 永健
+ * @author 剑豪
  * 配置日期
  */
 @Configuration

@@ -10,7 +10,7 @@ import java.util.Date;
 import java.util.List;
 
 /**
- * @author 永健
+ * @author 剑豪
  * 处理前端字符窜格式日期转换
  */
 @Component

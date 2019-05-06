@@ -16,7 +16,7 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 
 /**
- *  @author 永健
+ *  @author 剑豪
  *
  *  http请求头处理工具
  */

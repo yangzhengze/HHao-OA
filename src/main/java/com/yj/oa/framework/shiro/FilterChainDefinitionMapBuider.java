@@ -6,7 +6,7 @@ import org.springframework.stereotype.Component;
 import java.util.LinkedHashMap;
 
 /**
- * @author 永健
+ * @author 剑豪
  *
  * 配置shrio 拦截url
  *

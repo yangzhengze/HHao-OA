@@ -3,7 +3,7 @@ package com.yj.oa.common.exception.file;
 import org.apache.commons.fileupload.FileUploadException;
 
 /**
- * @author 永健
+ * @author 剑豪
  * 文件名超长异常
  */
 public class FileNameLengthException extends FileUploadException{

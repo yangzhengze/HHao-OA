@@ -3,7 +3,7 @@ package com.yj.oa.framework.web.po;
 import java.util.HashMap;
 
 /**
- * @author 永健
+ * @author 剑豪
  * 统一返回结果对象
  */
 public class AjaxResult extends HashMap<String, Object>

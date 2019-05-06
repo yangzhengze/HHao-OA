@@ -26,7 +26,7 @@ import java.text.SimpleDateFormat;
 import java.util.*;
 
 /**
- * @author 永健
+ * @author 剑豪
  */
 @Controller
 @RequestMapping("/attend")

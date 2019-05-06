@@ -1,7 +1,7 @@
 package com.yj.oa.common.utils;
 
 /**
- * @author 永健
+ * @author 剑豪
  * 字符串格式化
  * 
  */

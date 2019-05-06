@@ -5,7 +5,7 @@ import java.nio.charset.StandardCharsets;
 
 /**
  * 字符集工具类
- * @author 永健
+ * @author 剑豪
  */
 public class CharsetKit
 {

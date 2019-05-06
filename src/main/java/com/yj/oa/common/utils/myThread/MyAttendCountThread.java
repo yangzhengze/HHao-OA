@@ -11,7 +11,7 @@ import org.slf4j.LoggerFactory;
 import java.util.*;
 
 /**
- * @author 永健
+ * @author 剑豪
  * 线程 分批处理月底队员工的考勤统计
  */
 public class MyAttendCountThread implements Runnable{

@@ -5,7 +5,7 @@ import org.apache.commons.fileupload.FileUploadException;
 import java.io.IOException;
 
 /**
- * @author 永健
+ * @author 剑豪
  * 文件上传异常
  */
 public class MyFileUploadException extends IOException{

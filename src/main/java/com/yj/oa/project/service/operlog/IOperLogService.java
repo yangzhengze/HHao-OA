@@ -6,7 +6,7 @@ import com.yj.oa.project.po.OperLog;
 import java.util.List;
 
 /**
- * @author 永健
+ * @author 剑豪
  */
 public interface IOperLogService{
     int deleteByPrimaryKeys(Integer[] id);

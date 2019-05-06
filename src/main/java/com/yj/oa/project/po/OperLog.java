@@ -7,7 +7,7 @@ import java.util.Date;
 import java.util.Map;
 
 /**
- * @author 永健
+ * @author 剑豪
  */
 public class OperLog extends BasePo{
     private String id;

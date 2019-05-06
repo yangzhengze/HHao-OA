@@ -15,7 +15,7 @@ import javax.servlet.http.HttpSession;
 import static com.yj.oa.project.po.VerificationCode.ValidateCodeUtil.RANDOMCODEKEY;
 
 /**
- * @author 永健
+ * @author 剑豪
  * 登录验证用户的还在那个号密码以及验证码 是否为空
  */
 @Component

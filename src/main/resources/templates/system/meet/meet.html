@@ -20,8 +20,7 @@
                             <select name="createBy">
                                 <option value=""> - -</option>
                                 <option th:each="u:${Users}" th:value="${u.uid}"
-                                        th:text="${u.name}">
-
+                                        th:text="${u.name}"
                                 </option>
                             </select>
 
@@ -111,7 +110,7 @@
                 },
                 {
                     field: 'startTime',
-                    title: '开会5时间',
+                    title: '开会时间',
                     formatter: function (value) {
                         return $.common.dateFormat(value);
                     }

@@ -1,7 +1,7 @@
 package com.yj.oa.framework.aspect.enums;
 
 /**
- * @author 永健
+ * @author 剑豪
  */
 public enum OperLogTypeEnum{
     SUCCESS_TYPE(0,"info"),ERROR_TYPE(1,"error");

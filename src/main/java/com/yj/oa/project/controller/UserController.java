@@ -37,7 +37,7 @@ import java.io.IOException;
 import java.util.*;
 
 /**
- * @author 永健
+ * @author 剑豪
  */
 
 @Controller
@@ -154,6 +154,8 @@ public class UserController extends BaseController{
         user.setUid(createUID());
         user.setAvatar(CsEnum.avatar.USER_AVATAR.getValue());
         user.setCreateTime(new Date());
+
+        System.out.println(user);
         return result(iUserService.insertSelective(user));
     }
 

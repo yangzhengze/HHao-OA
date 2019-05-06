@@ -1,5 +1,4 @@
-﻿package com.yj.oa.common.utils.ftp;
-
+package com.yj.oa.common.utils.ftp;
 import com.yj.oa.common.utils.DateUtils;
 import com.yj.oa.common.utils.HttpHeaderUtil;
 import org.apache.commons.net.ftp.FTP;
@@ -18,7 +17,7 @@ import java.net.URLEncoder;
 import java.util.*;
 
 /**
- * @author 永健
+ * @author 剑豪
  * @描述 ftp上传工具
  *
  * @date 2018/9/20 0:35
@@ -29,7 +28,8 @@ public class FtpUtil{
     /**
      * FTP服务器ip
      */
-    private static final String host = "106.14.226.138";
+//    private static final String host = "106.14.226.138";
+    private static final String host = "192.168.245.1";
     /**
      * FTP服务器端口
      */
@@ -37,11 +37,11 @@ public class FtpUtil{
     /**
      * FTP登录账号
      */
-    private static final String username = "ftpuser";
+    private static final String username = "geely";
     /**
      * FTP登录密码
      */
-    private static final String password = "";
+    private static final String password = "geely";
     /**
      * FTP服务器基础目录,/home/ftpuser/images 图片上传到这 服务器路径
      */
@@ -49,8 +49,8 @@ public class FtpUtil{
     /**
      * FTP服务器文件存放路径。例如分日期存放：/2018/05/28。文件的路径为basePath+filePath
      */
-    public static final String filePath = "http://106.14.226.138:7777";
-
+//    public static final String filePath = "http://106.14.226.138:7777";
+    public static final String filePath = "ftp://192.168.245.1:21";
 
     /**
      *

@@ -17,7 +17,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * @author 永健
+ * @author 剑豪
  * 处理ajax Session过期请求
  */
 public class MySessionExpiredFilter extends PathMatchingFilter{
