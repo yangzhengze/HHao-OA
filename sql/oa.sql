@@ -26,11 +26,11 @@ CREATE TABLE `act_evt_log` (
   `PROC_INST_ID_` varchar(64) COLLATE utf8_bin DEFAULT NULL,
   `EXECUTION_ID_` varchar(64) COLLATE utf8_bin DEFAULT NULL,
   `TASK_ID_` varchar(64) COLLATE utf8_bin DEFAULT NULL,
-  `TIME_STAMP_` timestamp(3) NOT NULL DEFAULT CURRENT_TIMESTAMP(3) ON UPDATE CURRENT_TIMESTAMP(3),
+  `TIME_STAMP_` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   `USER_ID_` varchar(255) COLLATE utf8_bin DEFAULT NULL,
   `DATA_` longblob,
   `LOCK_OWNER_` varchar(255) COLLATE utf8_bin DEFAULT NULL,
-  `LOCK_TIME_` timestamp(3) NULL DEFAULT NULL,
+  `LOCK_TIME_` timestamp NULL DEFAULT NULL,
   `IS_PROCESSED_` tinyint(4) DEFAULT '0',
   PRIMARY KEY (`LOG_NR_`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
@@ -209,7 +209,7 @@ CREATE TABLE `act_hi_detail` (
   `NAME_` varchar(255) COLLATE utf8_bin NOT NULL,
   `VAR_TYPE_` varchar(255) COLLATE utf8_bin DEFAULT NULL,
   `REV_` int(11) DEFAULT NULL,
-  `TIME_` datetime(3) NOT NULL,
+  `TIME_` datetime NOT NULL,
   `BYTEARRAY_ID_` varchar(64) COLLATE utf8_bin DEFAULT NULL,
   `DOUBLE_` double DEFAULT NULL,
   `LONG_` bigint(20) DEFAULT NULL,
@@ -275,8 +275,8 @@ CREATE TABLE `act_hi_procinst` (
   `PROC_INST_ID_` varchar(64) COLLATE utf8_bin NOT NULL,
   `BUSINESS_KEY_` varchar(255) COLLATE utf8_bin DEFAULT NULL,
   `PROC_DEF_ID_` varchar(64) COLLATE utf8_bin NOT NULL,
-  `START_TIME_` datetime(3) NOT NULL,
-  `END_TIME_` datetime(3) DEFAULT NULL,
+  `START_TIME_` datetime NOT NULL,
+  `END_TIME_` datetime DEFAULT NULL,
   `DURATION_` bigint(20) DEFAULT NULL,
   `START_USER_ID_` varchar(255) COLLATE utf8_bin DEFAULT NULL,
   `START_ACT_ID_` varchar(255) COLLATE utf8_bin DEFAULT NULL,
@@ -313,13 +313,13 @@ CREATE TABLE `act_hi_taskinst` (
   `DESCRIPTION_` varchar(4000) COLLATE utf8_bin DEFAULT NULL,
   `OWNER_` varchar(255) COLLATE utf8_bin DEFAULT NULL,
   `ASSIGNEE_` varchar(255) COLLATE utf8_bin DEFAULT NULL,
-  `START_TIME_` datetime(3) NOT NULL,
-  `CLAIM_TIME_` datetime(3) DEFAULT NULL,
-  `END_TIME_` datetime(3) DEFAULT NULL,
+  `START_TIME_` datetime NOT NULL,
+  `CLAIM_TIME_` datetime DEFAULT NULL,
+  `END_TIME_` datetime DEFAULT NULL,
   `DURATION_` bigint(20) DEFAULT NULL,
   `DELETE_REASON_` varchar(4000) COLLATE utf8_bin DEFAULT NULL,
   `PRIORITY_` int(11) DEFAULT NULL,
-  `DUE_DATE_` datetime(3) DEFAULT NULL,
+  `DUE_DATE_` datetime DEFAULT NULL,
   `FORM_KEY_` varchar(255) COLLATE utf8_bin DEFAULT NULL,
   `CATEGORY_` varchar(255) COLLATE utf8_bin DEFAULT NULL,
   `TENANT_ID_` varchar(255) COLLATE utf8_bin DEFAULT '',
@@ -586,8 +586,8 @@ INSERT INTO `act_re_procdef` VALUES ('apply_ID:20:90004', '1', 'http://www.activ
 INSERT INTO `act_re_procdef` VALUES ('apply_ID:21:90008', '1', 'http://www.activiti.org/test', null, 'apply_ID', '21', '90005', 'processes/apply.bpmn', 'processes/apply.png', null, '0', '1', '1', '');
 INSERT INTO `act_re_procdef` VALUES ('apply_ID:22:147506', '1', 'http://www.activiti.org/test', null, 'apply_ID', '22', '147501', 'F:\\IDEAWorkParth\\OA\\target\\classes\\processes\\apply.bpmn', 'F:\\IDEAWorkParth\\OA\\target\\classes\\processes\\apply.apply_ID.png', null, '0', '1', '1', '');
 INSERT INTO `act_re_procdef` VALUES ('apply_ID:23:197506', '1', 'http://www.activiti.org/test', null, 'apply_ID', '23', '197501', 'F:\\IDEAWorkParth\\OA\\target\\classes\\processes\\apply.bpmn', 'F:\\IDEAWorkParth\\OA\\target\\classes\\processes\\apply.apply_ID.png', null, '0', '1', '1', '');
-INSERT INTO `act_re_procdef` VALUES ('apply_ID:24:212507', '1', 'http://www.activiti.org/test', null, 'apply_ID', '24', '212501', 'G:\\永健\\OA\\target\\classes\\processes\\apply.bpmn', 'G:\\永健\\OA\\target\\classes\\processes\\apply.apply_ID.png', null, '0', '1', '1', '');
-INSERT INTO `act_re_procdef` VALUES ('apply_ID:25:215007', '1', 'http://www.activiti.org/test', null, 'apply_ID', '25', '215001', 'G:\\永健\\OA\\target\\classes\\processes\\apply.bpmn', 'G:\\永健\\OA\\target\\classes\\processes\\apply.apply_ID.png', null, '0', '1', '1', '');
+INSERT INTO `act_re_procdef` VALUES ('apply_ID:24:212507', '1', 'http://www.activiti.org/test', null, 'apply_ID', '24', '212501', 'G:\\剑豪\\OA\\target\\classes\\processes\\apply.bpmn', 'G:\\剑豪\\OA\\target\\classes\\processes\\apply.apply_ID.png', null, '0', '1', '1', '');
+INSERT INTO `act_re_procdef` VALUES ('apply_ID:25:215007', '1', 'http://www.activiti.org/test', null, 'apply_ID', '25', '215001', 'G:\\剑豪\\OA\\target\\classes\\processes\\apply.bpmn', 'G:\\剑豪\\OA\\target\\classes\\processes\\apply.apply_ID.png', null, '0', '1', '1', '');
 INSERT INTO `act_re_procdef` VALUES ('apply_ID:26:222506', '1', 'http://www.activiti.org/test', null, 'apply_ID', '26', '222501', 'F:\\IDEAWorkParth\\OA\\target\\classes\\processes\\apply.bpmn', 'F:\\IDEAWorkParth\\OA\\target\\classes\\processes\\apply.apply_ID.png', null, '0', '1', '1', '');
 INSERT INTO `act_re_procdef` VALUES ('apply_ID:27:225006', '1', 'http://www.activiti.org/test', null, 'apply_ID', '27', '225001', 'F:\\IDEAWorkParth\\OA\\target\\classes\\processes\\apply.bpmn', 'F:\\IDEAWorkParth\\OA\\target\\classes\\processes\\apply.apply_ID.png', null, '0', '1', '1', '');
 INSERT INTO `act_re_procdef` VALUES ('apply_ID:28:287506', '1', 'http://www.activiti.org/test', null, 'apply_ID', '28', '287501', 'F:\\IDEAWorkParth\\OA\\target\\classes\\processes\\apply.bpmn', 'F:\\IDEAWorkParth\\OA\\target\\classes\\processes\\apply.apply_ID.png', null, '0', '1', '1', '');
@@ -618,8 +618,8 @@ INSERT INTO `act_re_procdef` VALUES ('leaveProce_ID:1:147507', '1', 'http://www.
 INSERT INTO `act_re_procdef` VALUES ('leaveProce_ID:2:147511', '1', 'http://www.activiti.org/test', '请假流程', 'leaveProce_ID', '2', '147508', 'processes/leave.bpmn', 'processes/leave.png', null, '0', '1', '1', '');
 INSERT INTO `act_re_procdef` VALUES ('leaveProce_ID:3:197507', '1', 'http://www.activiti.org/test', '请假流程', 'leaveProce_ID', '3', '197501', 'F:\\IDEAWorkParth\\OA\\target\\classes\\processes\\leave.bpmn', 'F:\\IDEAWorkParth\\OA\\target\\classes\\processes\\leave.leaveProce_ID.png', null, '0', '1', '1', '');
 INSERT INTO `act_re_procdef` VALUES ('leaveProce_ID:4:200004', '1', 'http://www.activiti.org/test', '请假流程', 'leaveProce_ID', '4', '200001', 'processes/leave.bpmn', 'processes/leave.png', null, '0', '1', '1', '');
-INSERT INTO `act_re_procdef` VALUES ('leaveProce_ID:5:212506', '1', 'http://www.activiti.org/test', '请假流程', 'leaveProce_ID', '5', '212501', 'G:\\永健\\OA\\target\\classes\\processes\\leave.bpmn', 'G:\\永健\\OA\\target\\classes\\processes\\leave.leaveProce_ID.png', null, '0', '1', '1', '');
-INSERT INTO `act_re_procdef` VALUES ('leaveProce_ID:6:215006', '1', 'http://www.activiti.org/test', '请假流程', 'leaveProce_ID', '6', '215001', 'G:\\永健\\OA\\target\\classes\\processes\\leave.bpmn', 'G:\\永健\\OA\\target\\classes\\processes\\leave.leaveProce_ID.png', null, '0', '1', '1', '');
+INSERT INTO `act_re_procdef` VALUES ('leaveProce_ID:5:212506', '1', 'http://www.activiti.org/test', '请假流程', 'leaveProce_ID', '5', '212501', 'G:\\剑豪\\OA\\target\\classes\\processes\\leave.bpmn', 'G:\\剑豪\\OA\\target\\classes\\processes\\leave.leaveProce_ID.png', null, '0', '1', '1', '');
+INSERT INTO `act_re_procdef` VALUES ('leaveProce_ID:6:215006', '1', 'http://www.activiti.org/test', '请假流程', 'leaveProce_ID', '6', '215001', 'G:\\剑豪\\OA\\target\\classes\\processes\\leave.bpmn', 'G:\\剑豪\\OA\\target\\classes\\processes\\leave.leaveProce_ID.png', null, '0', '1', '1', '');
 INSERT INTO `act_re_procdef` VALUES ('leaveProce_ID:7:217504', '1', 'http://www.activiti.org/test', '请假流程', 'leaveProce_ID', '7', '217501', 'processes/leave.bpmn', 'processes/leave.png', null, '0', '1', '1', '');
 INSERT INTO `act_re_procdef` VALUES ('leaveProce_ID:8:222507', '1', 'http://www.activiti.org/test', '请假流程', 'leaveProce_ID', '8', '222501', 'F:\\IDEAWorkParth\\OA\\target\\classes\\processes\\leave.bpmn', 'F:\\IDEAWorkParth\\OA\\target\\classes\\processes\\leave.leaveProce_ID.png', null, '0', '1', '1', '');
 INSERT INTO `act_re_procdef` VALUES ('leaveProce_ID:9:225007', '1', 'http://www.activiti.org/test', '请假流程', 'leaveProce_ID', '9', '225001', 'F:\\IDEAWorkParth\\OA\\target\\classes\\processes\\leave.bpmn', 'F:\\IDEAWorkParth\\OA\\target\\classes\\processes\\leave.leaveProce_ID.png', null, '0', '1', '1', '');
@@ -958,7 +958,7 @@ CREATE TABLE `t_dept` (
 -- ----------------------------
 -- Records of t_dept
 -- ----------------------------
-INSERT INTO `t_dept` VALUES ('1', '1111111111', '懂事长', '0', '老板', '2018-10-02 18:27:01');
+INSERT INTO `t_dept` VALUES ('1', '1111111111', '董事长', '0', '老板', '2018-10-02 18:27:01');
 INSERT INTO `t_dept` VALUES ('2', '2018100202', '测试部门', '0', '测试', '2018-09-14 00:00:00');
 INSERT INTO `t_dept` VALUES ('3', '', '运维部门', '0', '运维', '2018-09-14 00:00:00');
 INSERT INTO `t_dept` VALUES ('4', '', '技术部', '0', '技术', '2018-09-14 00:00:00');
@@ -986,7 +986,7 @@ CREATE TABLE `t_file` (
 INSERT INTO `t_file` VALUES ('2018-09-20_00-29-08.txt', 'idea注册破解.txt', '', 'text/plain', '855B   ', '王帅', '2018-10-07 22:46:28', '1');
 INSERT INTO `t_file` VALUES ('2018-10-02_19-40-26.jpg', 'timg.jpg', '', 'image/jpeg', '24.59KB   ', '小龙人', '2018-10-07 22:46:21', '0');
 INSERT INTO `t_file` VALUES ('2018-10-02_19-44-50.sql', 'mybatis.sql', '', 'application/octet-stream', '4.42KB   ', '小龙人', '2018-10-07 22:46:21', '0');
-INSERT INTO `t_file` VALUES ('2018-10-07_20-38-21.zip', '李永健.zip', '', 'application/zip', '4.05MB   ', 'Boss', '2018-10-07 22:46:23', '0');
+INSERT INTO `t_file` VALUES ('2018-10-07_20-38-21.zip', '李剑豪.zip', '', 'application/zip', '4.05MB   ', 'Boss', '2018-10-07 22:46:23', '0');
 
 -- ----------------------------
 -- Table structure for t_guestbook
@@ -1244,7 +1244,7 @@ INSERT INTO `t_operlog` VALUES ('186', '删除日志', '操作日志', '127.0.0.
 INSERT INTO `t_operlog` VALUES ('187', '下载文件', '文件管理', '127.0.0.1', 'XX 内网IP', '/file/download', 'com.yj.oa.project.controller.FileController/download()/GET', 'fileId=2018-09-20_00-29-08.txt , fileName=idea注册破解.txt', 'Invalid bound statement (not found): com.yj.oa.project.mapper.FilesMapper.updateByPrimaryKey', '1111111111', '2018-10-07 22:41:27', '1', '1', '1', 'Chrome', 'Windows 10');
 INSERT INTO `t_operlog` VALUES ('188', '下载文件', '文件管理', '127.0.0.1', 'XX 内网IP', '/file/download', 'com.yj.oa.project.controller.FileController/download()/GET', 'fileId=2018-09-20_00-29-08.txt , fileName=idea注册破解.txt', null, '1111111111', '2018-10-07 22:44:03', '0', '1', '0', 'Chrome', 'Windows 10');
 INSERT INTO `t_operlog` VALUES ('189', '下载文件', '文件管理', '127.0.0.1', 'XX 内网IP', '/file/download', 'com.yj.oa.project.controller.FileController/download()/GET', 'fileId=2018-09-20_00-29-08.txt , fileName=idea注册破解.txt', null, '1111111111', '2018-10-07 22:46:28', '0', '1', '0', 'Chrome', 'Windows 10');
-INSERT INTO `t_operlog` VALUES ('190', '修改信息', '部门管理', '127.0.0.1', 'XX 内网IP', '/dept/editSave', 'com.yj.oa.project.controller.DeptController/save()/POST', 'deptName=懂事长 , leader=1111111111 , status=0 , introduce=老板 , depId=1', null, '1111111111', '2018-10-07 22:48:12', '0', '1', '0', 'Chrome', 'Windows 10');
+INSERT INTO `t_operlog` VALUES ('190', '修改信息', '部门管理', '127.0.0.1', 'XX 内网IP', '/dept/editSave', 'com.yj.oa.project.controller.DeptController/save()/POST', 'deptName=董事长 , leader=1111111111 , status=0 , introduce=老板 , depId=1', null, '1111111111', '2018-10-07 22:48:12', '0', '1', '0', 'Chrome', 'Windows 10');
 INSERT INTO `t_operlog` VALUES ('191', '修改岗位信息', '岗位管理', '127.0.0.1', null, '/position/editSave', 'com.yj.oa.project.controller.PositionController/save()/POST', 'positionId=1 , positionName=董事长 , status=0 , descr=风云人物', null, '1111111111', '2018-10-07 22:48:32', '0', '1', '0', 'Chrome', 'Windows 10');
 INSERT INTO `t_operlog` VALUES ('192', '修改用户信息', '用户管理', '127.0.0.1', 'XX 内网IP', '/user/editSave', 'com.yj.oa.project.controller.UserController/save()/POST', 'uid=1111111111 , loginName=admin , name=Boss , email=123@qq.com , tel=18078542914 , age=20 , hobby=打球 , self_introduction=boss', null, '1111111111', '2018-10-07 22:48:50', '0', '1', '0', 'Chrome', 'Windows 10');
 INSERT INTO `t_operlog` VALUES ('193', '添加菜单', '菜单管理', '127.0.0.1', 'XX 内网IP', '/menu/addSave', 'com.yj.oa.project.controller.PermissionController/addRole()/POST', 'parenId=110 , type=2 , perName=githu , url=https://gitee.com/ , code= , icon=', null, '1111111111', '2018-10-08 12:51:56', '0', '1', '0', 'Chrome', 'Windows 10');
@@ -1754,7 +1754,7 @@ DROP TABLE IF EXISTS `t_schedule`;
 CREATE TABLE `t_schedule` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `createBy` varchar(255) NOT NULL,
-  `startTime` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00' ON UPDATE CURRENT_TIMESTAMP,
+  `startTime` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00',
   `endTime` timestamp NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP,
   `createTime` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00',
   `title` varchar(255) DEFAULT NULL,
